@@ -1,0 +1,249 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+header {
+    background: #ffffff;
+    color: #000000;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header .profile-name {
+    text-align: center;
+}
+header .profile-name h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    object-fit: cover;
+    border: 3px solid #747475;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.social-nav {
+    text-align: center;
+    padding: 20px 0;
+}
+.social-nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.social-nav ul li {
+    margin: 10px;
+}
+.social-nav a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.social-nav a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.social-nav .fa-google { background-color: #DB4437; }
+.social-nav .fa-linkedin { background-color: #0077B5; }
+.social-nav .fa-github { background-color: #333; }
+.social-nav .fa-twitter { background-color: #1DA1F2; }
+.social-nav .fa-discord { background-color: #7289DA; }
+.social-nav .fa-reddit { background-color: #FF4500; }
+.social-nav .fa-spotify { background-color: #1DB954; }
+.social-nav img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+main {
+    flex: 1;
+    padding: 2rem 0;
+}
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 0.3rem 0;
+    font-size: 0.8rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.footer-section h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #ecf0f1;
+    font-size: 1.4rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+    transform: translateY(-3px);
+}
+
+.contact-info p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+}
+
+
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s;
+}
+
+#scrollToTop:hover {
+    background-color: #2980b9;
+}
+
+#darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#darkModeToggle:hover {
+    background-color: #e0e0e0;
+}
+
+.dark-mode {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.dark-mode header {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+.dark-mode .profile-name h1 {
+    color: #3498db;
+}
+
+.dark-mode footer {
+    background-color: #34495e;
+}
+
+
+header {
+    background-image: linear-gradient(45deg, #9dbfd6, #6996b9);
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+.profile-name h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    margin-top: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.subtitle:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .profile-name h1 {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
+
