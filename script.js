@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     animateHeader();
 
     // Typing effect for the name
-    const fullName = "Rahul Kumar Ghosh";
+    const fullName = "Rahul Ghosh";
     let i = 0;
     function typeWriter() {
         if (i < fullName.length) {
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Add a subtitle that changes on hover
     const subtitle = document.createElement('p');
     subtitle.classList.add('subtitle');
-    subtitle.textContent = 'Passionate about';
+    subtitle.textContent = 'Passionate about Classical Computing';
     profileName.after(subtitle);
 
     const subtitles = [
