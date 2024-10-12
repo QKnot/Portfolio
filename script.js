@@ -118,14 +118,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
 });
 
-// Existing image change function
-let isOriginalImage = true;
+let imageIndex = 0;
+const images = [
+    "image/rahul.jpg",
+    "image/rahul2.jpg",
+    "image/rahul3.jpg",
+    "image/rahul4.jpg",
+    "image/rahul5.jpeg"
+];
+
 function changeImage() {
     const image = document.getElementById('clickableImage');
-    if (isOriginalImage) {
-        image.src = "image/rahul2.jpg";
-    } else {
-        image.src = "image/rahul.jpg";
-    }
-    isOriginalImage = !isOriginalImage;
+    imageIndex = (imageIndex + 1) % images.length;  // Loop through images
+    image.src = images[imageIndex];
 }
