@@ -120,6 +120,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 let imageIndex = 0;
 const images = [
+    "image/rahul6.png",
     "image/rahul.jpg",
     "image/rahul2.jpg",
     "image/rahul3.jpg",
