@@ -1,0 +1,18 @@
+*{
+    padding:0;
+    margin: 10px;
+}
+body{
+    color:grey;
+}
+h1, h2{
+    text-align: center;
+    color: #4A4747;
+}
+.text-content{
+    color:black;
+}
+.foot{
+    text-align: center;
+    color: grey;
+}
