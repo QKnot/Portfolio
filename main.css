@@ -63,3 +63,20 @@ a {
 p {
     text-align: justify; 
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #555;
+    color: white;
+}
