@@ -5,7 +5,7 @@ body {
     max-width: 800px;
     line-height: 1.3;
     color: #333;
-    text-align: justify; 
+    text-align: justify;
 }
 
 .navigation {
@@ -27,12 +27,12 @@ h1 {
     color: #555;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    text-align: left; 
+    text-align: left;
 }
 
 .position {
     margin-bottom: 30px;
-    text-align: left; 
+    text-align: left;
 }
 
 .info-section {
@@ -43,7 +43,7 @@ h2 {
     color: #555;
     font-size: 1.8rem;
     margin-bottom: 20px;
-    text-align: left; 
+    text-align: left;
 }
 
 ul {
@@ -61,7 +61,7 @@ a {
 }
 
 p {
-    text-align: justify; 
+    text-align: justify;
 }
 
 table {
@@ -70,7 +70,8 @@ table {
     margin-top: 10px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #333;
     padding: 10px;
     text-align: left;
@@ -79,4 +80,67 @@ th, td {
 th {
     background-color: #555;
     color: white;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        line-height: 1.8;
+    }
+
+    .navigation a {
+        font-size: 0.95rem;
+        margin: 0 5px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .position {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    li {
+        margin-bottom: 12px;
+    }
+
+    /* Table responsive - horizontal scroll */
+    .info-section {
+        overflow-x: auto;
+    }
+
+    table {
+        font-size: 0.85rem;
+        min-width: 500px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
 }
