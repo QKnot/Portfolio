@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates - Rahul Ghosh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="certificate.css">
+</head>
+
+<body>
+    <div class="certificates-container">
+        <!-- Back Link -->
+        <a href="../index.html" class="back-link">
+            ← Back to Portfolio
+        </a>
+
+        <!-- Header -->
+        <h2>My Certificates</h2>
+        <p class="subtitle">A showcase of achievements and recognitions</p>
+
+        <!-- Certificate Grid -->
+        <div class="certificates-grid">
+            <div class="certificate-card" onclick="openLightbox(0)">
+                <div class="certificate-image">
+                    <img src="image/icpc2025p1.png" alt="ICPC Dhaka Regional 2025 Certificate" loading="lazy">
+                    <div class="certificate-overlay">
+                        <span class="view-text">View Certificate</span>
+                    </div>
+                </div>
+                <div class="certificate-info">
+                    <h3>ICPC Dhaka Regional 2025</h3>
+                    <span class="certificate-badge">Participation</span>
+                </div>
+            </div>
+
+            <div class="certificate-card" onclick="openLightbox(1)">
+                <div class="certificate-image">
+                    <img src="image/icpc2025p2.png" alt="ICPC Dhaka Regional 2025 Certificate 2" loading="lazy">
+                    <div class="certificate-overlay">
+                        <span class="view-text">View Certificate</span>
+                    </div>
+                </div>
+                <div class="certificate-info">
+                    <h3>ICPC Dhaka Regional 2025</h3>
+                    <span class="certificate-badge">Achievement</span>
+                </div>
+            </div>
+
+            <div class="certificate-card" onclick="openLightbox(2)">
+                <div class="certificate-image">
+                    <img src="image/icpc2025p3.png" alt="ICPC Dhaka Regional 2025 Certificate 3" loading="lazy">
+                    <div class="certificate-overlay">
+                        <span class="view-text">View Certificate</span>
+                    </div>
+                </div>
+                <div class="certificate-info">
+                    <h3>ICPC Dhaka Regional 2025</h3>
+                    <span class="certificate-badge">Team Excellence</span>
+                </div>
+            </div>
+
+            <div class="certificate-card" onclick="openLightbox(3)">
+                <div class="certificate-image">
+                    <img src="image/icpc2025p4.png" alt="ICPC Dhaka Regional 2025 Certificate 4" loading="lazy">
+                    <div class="certificate-overlay">
+                        <span class="view-text">View Certificate</span>
+                    </div>
+                </div>
+                <div class="certificate-info">
+                    <h3>ICPC Dhaka Regional 2025</h3>
+                    <span class="certificate-badge">Programming</span>
+                </div>
+            </div>
+
+            <div class="certificate-card" onclick="openLightbox(4)">
+                <div class="certificate-image">
+                    <img src="image/icpc2025p5.png" alt="ICPC Dhaka Regional 2025 Certificate 5" loading="lazy">
+                    <div class="certificate-overlay">
+                        <span class="view-text">View Certificate</span>
+                    </div>
+                </div>
+                <div class="certificate-info">
+                    <h3>ICPC Dhaka Regional 2025</h3>
+                    <span class="certificate-badge">Competitive</span>
+                </div>
+            </div>
+
+            <div class="certificate-card" onclick="openLightbox(5)">
+                <div class="certificate-image">
+                    <img src="image/icpc2025p6.png" alt="ICPC Dhaka Regional 2025 Certificate 6" loading="lazy">
+                    <div class="certificate-overlay">
+                        <span class="view-text">View Certificate</span>
+                    </div>
+                </div>
+                <div class="certificate-info">
+                    <h3>ICPC Dhaka Regional 2025</h3>
+                    <span class="certificate-badge">ICPC 2025</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); navigateLightbox(-1)">❮</span>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="" alt="Certificate">
+            <p id="lightbox-caption"></p>
+        </div>
+        <span class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); navigateLightbox(1)">❯</span>
+    </div>
+
+    <script src="certificate.js"></script>
+</body>
+
+</html>
