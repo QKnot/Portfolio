@@ -20,7 +20,129 @@
         <a href="https://qknot.github.io/play-list/" target="_blank">Music</a>
     </div>
 
-    <h1>Rahul Ghosh</h1>
+    <style>
+        #name-heading {
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        #name-heading:hover {
+            color: #222;
+        }
+
+        #photo-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.88);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        #photo-modal .modal-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            animation: scaleIn 0.35s ease;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.85);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        #photo-modal .photo-frame {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.25);
+            box-shadow:
+                0 0 40px rgba(255, 255, 255, 0.1),
+                0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        #photo-modal .modal-name {
+            color: #fff;
+            font-family: 'Georgia', serif;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
+        #photo-modal .close-btn {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        #photo-modal .close-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            #photo-modal .photo-frame {
+                width: 220px;
+                height: 220px;
+            }
+
+            #photo-modal .close-btn {
+                top: -45px;
+                right: -10px;
+            }
+        }
+    </style>
+
+    <h1 id="name-heading" onclick="document.getElementById('photo-modal').style.display='flex'">Rahul Ghosh</h1>
+
+    <!-- Photo Modal -->
+    <div id="photo-modal" onclick="this.style.display='none'">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="document.getElementById('photo-modal').style.display='none'">✕</button>
+            <img src="./Image/rahul.png" alt="Rahul Ghosh" class="photo-frame">
+            <span class="modal-name">Rahul Ghosh</span>
+        </div>
+    </div>
 
     <div class="position">
         <p>
@@ -51,6 +173,8 @@
             <li><a href="https://leetcode.com/QKnot" target="_blank">LeetCode: QKnot</a></li>
             <li><a href="https://codeforces.com/profile/qknot" target="_blank">Codeforces: qknot</a></li>
             <li><a href="https://www.instagram.com/qknot1729" target="_blank">Instagram: qknot1729</a></li>
+            <li><a href="https://www.facebook.com/qknot1729" target="_blank">Facebook: Rahul Ghosh</a></li>
+            <li><a href="https://www.pinterest.com/qknot03/_profile/" target="_blank">Pinterest: qknot03</a></li>
         </ul>
     </div>
     <div class="info-section" id="projects">
