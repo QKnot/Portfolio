@@ -6,7 +6,22 @@ const certificates = [
     { src: 'image/icpc2025p3.png', caption: 'ICPC Dhaka Regional 2025 - Team Excellence' },
     { src: 'image/icpc2025p4.png', caption: 'ICPC Dhaka Regional 2025 - Programming Certificate' },
     { src: 'image/icpc2025p5.png', caption: 'ICPC Dhaka Regional 2025 - Competitive Programming' },
-    { src: 'image/icpc2025p6.png', caption: 'ICPC Dhaka Regional 2025 - ICPC 2025' }
+    { src: 'image/icpc2025p6.png', caption: 'ICPC Dhaka Regional 2025 - ICPC 2025' },
+    { src: 'image/658387344_122130152169023585_1459835600841281494_n.jpg', caption: 'Certificate 7' },
+    { src: 'image/656942176_122130152223023585_7328227418115973037_n.jpg', caption: 'Certificate 8' },
+    { src: 'image/658933468_122130152289023585_5888706071906847638_n.jpg', caption: 'Certificate 9' },
+    { src: 'image/658937840_122130152343023585_8193064021269962259_n.jpg', caption: 'Certificate 10' },
+    { src: 'image/656594291_122130152397023585_1299070417593216126_n.jpg', caption: 'Certificate 11' },
+    { src: 'image/656621583_122130152463023585_3435159524454495649_n.jpg', caption: 'Certificate 12' },
+    { src: 'image/658417343_122130152577023585_6949603499875702645_n.jpg', caption: 'Certificate 13' },
+    { src: 'image/656356612_122130152679023585_8965976401452477941_n.jpg', caption: 'Certificate 14' },
+    { src: 'image/657834315_122130152793023585_4558296274824592324_n.jpg', caption: 'Certificate 15' },
+    { src: 'image/657340044_122130152949023585_7177952720334494801_n.jpg', caption: 'Certificate 16' },
+    { src: 'image/658367301_122130153069023585_1639568802400619339_n.jpg', caption: 'Certificate 17' },
+    { src: 'image/657482585_122130153159023585_5902939903108132533_n.jpg', caption: 'Certificate 18' },
+    { src: 'image/659027746_122130153243023585_3587508740642468982_n.jpg', caption: 'Certificate 19' },
+    { src: 'image/657512510_122130153315023585_8816724405948663326_n.jpg', caption: 'Certificate 20' },
+    { src: 'image/658771591_122130153399023585_526260520636660552_n.jpg', caption: 'Certificate 21' }
 ];
 
 let currentIndex = 0;

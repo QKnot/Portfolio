@@ -4,189 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Rahul Ghosh — Computer Science student at NUBTK, interested in AI, Quantum Computing, and Competitive Programming.">
     <title>Rahul Ghosh</title>
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div class="navigation">
-        <a href="#">About</a> |
-        <a href="#contact">Contact</a> |
-        <a href="Blog/blog.html" target="_blank">Blog</a> |
-        <a href="#projects">Projects</a> |
-        <a href="Certificate/certificate.html">Certificates</a> |
-        <a href="#interest">Interests</a> |
-        <a href="#cp">Competitive Programming</a> |
-        <a href="https://qknot.github.io/play-list/" target="_blank">Music</a>
+
+    <!-- ══════════ HEADER ══════════ -->
+    <div class="header-block">
+        <h1 class="name" id="name-heading" onclick="document.getElementById('photo-modal').style.display='flex'"
+            style="cursor:pointer;">Rahul Ghosh</h1>
+
+        <p class="affiliation">
+            <a href="mailto:qknot0.3@gmail.com">qknot0.3@gmail.com</a><br>
+            <a href="https://github.com/QKnot" target="_blank">github.com/QKnot</a>
+        </p>
+
+        <div class="titles">
+            <p><em>Student, Department of Computer Science &amp; Engineering</em></p>
+            <p>Northern University of Business and Technology Khulna</p>
+        </div>
+
+        <div class="header-links">
+            <a href="https://github.com/QKnot" target="_blank">GitHub</a>
+            <span class="sep">·</span>
+            <a href="https://www.linkedin.com/in/qknot" target="_blank">LinkedIn</a>
+            <span class="sep">·</span>
+            <a href="https://leetcode.com/QKnot" target="_blank">LeetCode</a>
+            <span class="sep">·</span>
+            <a href="https://codeforces.com/profile/qknot" target="_blank">Codeforces</a>
+            <span class="sep">·</span>
+            <a href="https://x.com/QKnot0_5" target="_blank">X</a>
+            <span class="sep">·</span>
+            <a href="Blog/blog.html" target="_blank">Blog</a>
+            <span class="sep">·</span>
+            <a href="Certificate/certificate.html">Certificates</a>
+            <span class="sep">·</span>
+            <a href="https://qknot.github.io/play-list/" target="_blank">Music</a>
+        </div>
     </div>
 
-    <style>
-        #name-heading {
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
-
-        #name-heading:hover {
-            color: #222;
-        }
-
-        #photo-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.88);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            z-index: 9999;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            animation: fadeIn 0.3s ease;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        #photo-modal .modal-content {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 16px;
-            animation: scaleIn 0.35s ease;
-        }
-
-        @keyframes scaleIn {
-            from {
-                transform: scale(0.85);
-                opacity: 0;
-            }
-
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        #photo-modal .photo-frame {
-            width: 280px;
-            height: 280px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid rgba(255, 255, 255, 0.25);
-            box-shadow:
-                0 0 40px rgba(255, 255, 255, 0.1),
-                0 8px 32px rgba(0, 0, 0, 0.5);
-        }
-
-        #photo-modal .modal-name {
-            color: #fff;
-            font-family: 'Georgia', serif;
-            font-size: 1.6rem;
-            letter-spacing: 1px;
-            opacity: 0.9;
-        }
-
-        #photo-modal .close-btn {
-            position: absolute;
-            top: -50px;
-            right: -50px;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
-            font-size: 1.2rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s ease;
-        }
-
-        #photo-modal .close-btn:hover {
-            background: rgba(255, 255, 255, 0.25);
-            border-color: rgba(255, 255, 255, 0.5);
-        }
-
-        @media (max-width: 768px) {
-            #photo-modal .photo-frame {
-                width: 220px;
-                height: 220px;
-            }
-
-            #photo-modal .close-btn {
-                top: -45px;
-                right: -10px;
-            }
-        }
-    </style>
-
-    <h1 id="name-heading" onclick="document.getElementById('photo-modal').style.display='flex'">Rahul Ghosh</h1>
-
-    <!-- Photo Modal -->
+    <!-- ══════════ PHOTO MODAL ══════════ -->
     <div id="photo-modal" onclick="this.style.display='none'">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="close-btn" onclick="document.getElementById('photo-modal').style.display='none'">✕</button>
-            <img src="./Image/rahul.png" alt="Rahul Ghosh" class="photo-frame">
+            <img src="./Image/rahul2.png" alt="Rahul Ghosh" class="photo-frame">
             <span class="modal-name">Rahul Ghosh</span>
         </div>
     </div>
 
-    <div class="position">
-        <p>
-            Student<br>
-            Department of Computer Science and Engineering<br>
-            Northern University of Business and Technology Khulna
-        </p>
+    <!-- ══════════ BIO ROW ══════════ -->
+    <div class="bio-row">
+        <div class="bio-photo">
+            <img src="./Image/rahul2.png" alt="Rahul Ghosh">
+        </div>
+        <div class="bio-text">
+            <p>
+                I am a student of Computer Science and Engineering at Northern University of Business and
+                Technology Khulna. I am interested in Artificial Intelligence, Quantum Computing, Classical
+                Computing, Competitive Programming, and algorithms
+                <a href="#interest">see all</a>.
+            </p>
+            <p class="find-me">
+                (Find me on
+                <a href="https://discord.com/users/qknot" target="_blank">Discord</a>,
+                <a href="https://www.reddit.com/user/QKnot0_5" target="_blank">Reddit</a>,
+                <a href="https://www.instagram.com/qknot1729" target="_blank">Instagram</a>,
+                <a href="https://www.facebook.com/qknot1729" target="_blank">Facebook</a>,
+                <a href="https://open.spotify.com/user/31x7rqynabsrnkimcz67anxnhpti?si=mhGn-n-RQOCN8wfdiJ39Yg"
+                    target="_blank">Spotify</a>,
+                <a href="https://www.pinterest.com/qknot03/_profile/" target="_blank">Pinterest</a>.)
+            </p>
+        </div>
     </div>
-    <div class="info-section" id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a student of Computer Science and Engineering at Northern University of Business and Technology Khulna.
-            I am interested in Artificial intelligence, Quantum Computing, Classical Computing, Competitive Pogramming,
-            algorithms <a href="#interest">See all</a>.
-        </p>
-    </div>
-    <div class="info-section" id="contact">
-        <h2>Contact Information</h2>
-        <ul>
-            <li><a href="mailto:qknot0.3@gmail.com" target="_blank">Email: qknot0.3</a></li>
-            <li><a href="https://www.linkedin.com/in/qknot" target="_blank">LinkedIn: qknot</a></li>
-            <li><a href="https://github.com/QKnot" target="_blank">GitHub: QKnot</a></li>
-            <li><a href="https://x.com/QKnot0_5" target="_blank">X: QKnot0_5</a></li>
-            <li><a href="https://discord.com/users/qknot" target="_blank">Discord: qknot</a></li>
-            <li><a href="https://www.reddit.com/user/QKnot0_5" target="_blank">Reddit: QKnot0_5</a></li>
-            <li><a href="https://open.spotify.com/user/31x7rqynabsrnkimcz67anxnhpti?si=mhGn-n-RQOCN8wfdiJ39Yg"
-                    target="_blank">Spotify: QKnot</a></li>
-            <li><a href="https://leetcode.com/QKnot" target="_blank">LeetCode: QKnot</a></li>
-            <li><a href="https://codeforces.com/profile/qknot" target="_blank">Codeforces: qknot</a></li>
-            <li><a href="https://www.instagram.com/qknot1729" target="_blank">Instagram: qknot1729</a></li>
-            <li><a href="https://www.facebook.com/qknot1729" target="_blank">Facebook: Rahul Ghosh</a></li>
-            <li><a href="https://www.pinterest.com/qknot03/_profile/" target="_blank">Pinterest: qknot03</a></li>
-        </ul>
-    </div>
-    <div class="info-section" id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://qknot.github.io/University-Formal-Application-Generator/" target="_blank">University
-                    Formal Application Generator</a></li>
-            <li><a href="https://qknot.github.io/NUBTK-Cover-Page-Generator/" target="_blank">NUBTK Cover Page
-                    Generator</a></li>
-        </ul>
-    </div>
-    <div class="info-section" id="cp">
+
+    <!-- ══════════ COMPETITIVE PROGRAMMING ══════════ -->
+    <div class="section" id="cp">
         <h2>Competitive Programming</h2>
         <table>
             <thead>
@@ -274,11 +169,30 @@
             </tbody>
         </table>
     </div>
-    <div class="info-section" id="interest">
+
+    <!-- ══════════ PROJECTS ══════════ -->
+    <div class="section" id="projects">
+        <h2>Some projects I'm associated with&hellip;</h2>
+        <div class="project-grid">
+            <div class="proj-name"><a href="https://qknot.github.io/University-Formal-Application-Generator/"
+                    target="_blank">Application Generator</a></div>
+            <div class="proj-desc">a formal university application generator</div>
+
+            <div class="proj-name"><a href="https://qknot.github.io/NUBTK-Cover-Page-Generator/" target="_blank">Cover
+                    Page Generator</a></div>
+            <div class="proj-desc">a NUBTK assignment cover page generator</div>
+
+            <div class="proj-name"><a href="https://qknot.github.io/play-list/" target="_blank">Playlist</a></div>
+            <div class="proj-desc">a personal music playlist collection</div>
+        </div>
+    </div>
+
+    <!-- ══════════ INTERESTS ══════════ -->
+    <div class="section" id="interest">
         <h2>Interests</h2>
         <ul>
-            <li>Mathematics(Number Theory, Linear Algebra, Calculus)</li>
-            <li>Physics(Quantum Mechanics, Electromagnetism)</li>
+            <li>Mathematics (Number Theory, Linear Algebra, Calculus)</li>
+            <li>Physics (Quantum Mechanics, Electromagnetism)</li>
             <li>Human behavior
                 <ul>
                     <p>I want to understand human behavior from the perspective of evolutionary biology—why people's
@@ -289,16 +203,16 @@
             </li>
             <li>Linux
                 <ul>
-                    <li>My favorite Linux distro are Linux Mint, Arch Linux.</li>
+                    <p>My favorite Linux distros are Linux Mint and Arch Linux.</p>
                 </ul>
             </li>
             <li>Music
                 <ul>
                     <p>My favorite music genre is Heavy Metal. My all time favorite band is <a
-                            href="https://www.avengedsevenfold.com/" target="_blank">Avenged Sevenfold</a>(<a
-                            href="https://www.youtube.com/watch?v=KVjBCT2Lc94" target="_blank">A little peace of
-                            heaven</a>, <a href="https://youtu.be/A7ry4cx6HfY?si=OTmHB7QMPc1tnp6g" target="_blank">So
-                            far away</a>, Nightmare, Dear God). I used to listen to Queen, Pink Floyd, Led Zeppelin,
+                            href="https://www.avengedsevenfold.com/" target="_blank">Avenged Sevenfold</a> (<a
+                            href="https://www.youtube.com/watch?v=KVjBCT2Lc94" target="_blank">A Little Piece of
+                            Heaven</a>, <a href="https://youtu.be/A7ry4cx6HfY?si=OTmHB7QMPc1tnp6g" target="_blank">So
+                            Far Away</a>, Nightmare, Dear God). I used to listen to Queen, Pink Floyd, Led Zeppelin,
                         Metallica, Bullet for My Valentine, My Chemical Romance, Eagles, Five Finger Death Punch, John
                         Denver, Dream Theater, Green Day etc.</p>
                 </ul>
@@ -310,33 +224,32 @@
                             from a behavioral evolutionary perspective in history.</strong></p>
                 </ul>
             </li>
-            <li>Combat Sport's
+            <li>Combat Sports
                 <ul>
                     <p>I am a big fan of MMA (Mixed Martial Arts) and Brazilian Jiu-Jitsu (BJJ). I am a huge fan of <a
-                            href="https://en.wikipedia.org/wiki/Khabib_Nurmagomedov" target="_blank"> Khabib
-                            Nurmagomedov </a>, <a href="https://en.wikipedia.org/wiki/Islam_Makhachev"
+                            href="https://en.wikipedia.org/wiki/Khabib_Nurmagomedov" target="_blank">Khabib
+                            Nurmagomedov</a>, <a href="https://en.wikipedia.org/wiki/Islam_Makhachev"
                             target="_blank">Islam Makhachev</a> and <a
                             href="https://en.wikipedia.org/wiki/Buvaisar_Saitiev" target="_blank">Buvaisar Saitiev</a>
                         for their fighting skills and ideology.</p>
                 </ul>
             </li>
-            <li>Favorite podcast
+            <li>Favorite podcasts
                 <ul>
-                    <p>My favorite podcast are <a href="https://www.youtube.com/@lexfridman" target="_blank">Lex Fridman
-                            Podcast</a>, <a href="https://www.youtube.com/@joerogan">The Joe Rogan Experience
-                            podcast</a>.</p>
+                    <p>My favorite podcasts are <a href="https://www.youtube.com/@lexfridman" target="_blank">Lex
+                            Fridman
+                            Podcast</a>, <a href="https://www.youtube.com/@joerogan" target="_blank">The Joe Rogan
+                            Experience</a>.</p>
                 </ul>
             </li>
         </ul>
     </div>
 
-    <!-- Certificates Section
-    <div class="info-section" id="certificates">
-        <h2>Certificates</h2>
-        <p>
-            <a href="Certificate/certificate.html" target="_blank">View All Certificates →</a>
-        </p>
-    </div> -->
+    <!-- ══════════ FOOTER ══════════ -->
+    <div class="footer">
+        Rahul Ghosh &mdash; NUBTK
+    </div>
+
 </body>
 
 </html>
