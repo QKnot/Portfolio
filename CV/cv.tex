@@ -1,0 +1,209 @@
+%-------------------------
+% CV — Rahul Kumar Ghosh
+% Compiled with: pdflatex cv.tex
+%-------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+% ── Packages ──────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+
+% ── Colors ────────────────────────────────────────────────────
+\definecolor{headerblue}{HTML}{2C5282}
+\definecolor{linkblue}{HTML}{2B6CB0}
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{lightgray}{HTML}{666666}
+
+% ── Hyperlinks ────────────────────────────────────────────────
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkblue,
+    urlcolor=linkblue,
+    pdfauthor={Rahul Kumar Ghosh},
+    pdftitle={CV — Rahul Kumar Ghosh},
+}
+
+% ── Section Formatting ───────────────────────────────────────
+\titleformat{\section}
+  {\large\bfseries\color{headerblue}}
+  {}
+  {0em}
+  {}
+  [\vspace{-0.6em}\textcolor{headerblue}{\rule{\textwidth}{0.8pt}}]
+
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% ── Remove page numbers ──────────────────────────────────────
+\pagestyle{empty}
+
+% ── Custom commands ──────────────────────────────────────────
+\newcommand{\cventry}[5]{%
+  \textbf{#1} \hfill \textit{#2} \\
+  \textit{#3} \hfill #4 \\
+  #5 \par\vspace{4pt}
+}
+
+\newcommand{\projectentry}[3]{%
+  \textbf{\href{#1}{#2}} --- #3 \par\vspace{3pt}
+}
+
+% ══════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── Header ───────────────────────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries\color{headerblue} Rahul Kumar Ghosh} \\[6pt]
+  {\color{darkgray}
+    \faEnvelope\ \href{mailto:qknot0.3@gmail.com}{qknot0.3@gmail.com} \quad
+    \faGithub\ \href{https://github.com/QKnot}{github.com/QKnot} \quad
+    \faLinkedin\ \href{https://www.linkedin.com/in/qknot}{linkedin.com/in/qknot}
+  } \\[3pt]
+  {\color{lightgray}
+    \faCode\ \href{https://codeforces.com/profile/qknot}{Codeforces} \quad
+    \faCode\ \href{https://leetcode.com/QKnot}{LeetCode} \quad
+    \faGlobe\ \href{https://qknot.github.io/Portfolio/}{Portfolio}
+  }
+\end{center}
+
+% ── Education ────────────────────────────────────────────────
+\section{Education}
+
+\cventry
+  {Northern University of Business and Technology Khulna}
+  {Khulna, Bangladesh}
+  {B.Sc.\ in Computer Science \& Engineering}
+  {2022 -- 2026}
+  {CGPA: \textbf{3.884} / 4.00 \quad|\quad 152 Credit Hours}
+
+\textbf{Relevant Coursework:}
+Data Structures, Algorithms Design \& Analysis, Artificial Intelligence, 
+Neural Networks, Pattern Recognition, Compiler Design, Operating Systems, 
+Database Management Systems, Computer Architecture, Theory of Computation,
+Software Engineering, Computer Networks, Discrete Mathematics, 
+Mathematical Analysis for Computer Science, Linear Programming \& 
+Combinatorial Optimization.
+
+% ── Research Interests ───────────────────────────────────────
+\section{Research Interests}
+
+Large Language Models, Deep Learning, Low Rank Adaptation (LoRA), Quantum Error Correction, Bridge between Classical and Quantum Computing, 
+Medical Image Processing, Transformers Competitive Programming, Algorithms, Machine Learning, Explainable AI (XAI), Natural Language Processing.
+
+% ── Competitive Programming ─────────────────────────────────
+\section{Competitive Programming}
+
+\begin{tabularx}{\textwidth}{X r l}
+  \textbf{Contest} & \textbf{Rank} & \textbf{Scope} \\[3pt]
+  \href{https://toph.co/c/inter-university-buet-cse-fest-2026/standings}
+       {BUET Inter University Programming Contest 2026}
+       \hfill \textit{Team: NUBTK \$({\textasciicircum}w{\textasciicircum})\$}
+       & 88 & National \\[2pt]
+  \href{https://bapsoj.org/contests/icpc-dhaka-onsite-2025/standings}
+       {ICPC Dhaka Regional 2025}
+       \hfill \textit{Team: NUBTK \$({\textasciicircum}w{\textasciicircum})\$}
+       & 83 & National \\[2pt]
+  \href{https://bapsoj.org/contests/icpc-dhaka-2025-online-preliminary/standings}
+       {ICPC Dhaka Regional 2025 --- Preliminary}
+       \hfill \textit{Team: NUBTK \$({\textasciicircum}w{\textasciicircum})\$}
+       & 45 & National \\[2pt]
+  \href{https://coderoj.com/c/nwu-cse-fest-2025/standings}
+       {NWU IUPC 2025}
+       \hfill \textit{Team: NUBTK \$({\textasciicircum}w{\textasciicircum})\$}
+       & 23 & National \\[2pt]
+  \href{https://toph.co/c/uttara-university-inter-university-2025/standings}
+       {UU IUPC 2025}
+       \hfill \textit{Team: trio\_QUbit}
+       & 101 & National \\[2pt]
+  \href{https://toph.co/c/duet-inter-university-iupc-2025/standings}
+       {DUET IUPC 2025}
+       \hfill \textit{Team: trio\_QUbit}
+       & 82 & National \\[2pt]
+  \href{https://bapsoj.org/contests/miaki-presents-kuet-iupc-onsite-2025/standings}
+       {KUET IUPC 2025}
+       \hfill \textit{Team: trio\_QUbit}
+       & 140 & National \\[2pt]
+  \href{https://bapsoj.org/contests/icpc-preliminary-dhaka-site-2024/standings}
+       {ICPC Dhaka Regional 2024 --- Preliminary}
+       \hfill \textit{Team: trio\_QUbit}
+       & 391 & National \\[2pt]
+  \href{https://toph.co/c/khulna-regional-inter-university-kriupc/standings}
+       {KU KRIUPC 2024}
+       \hfill \textit{Team: trio\_QUbit}
+       & 37 & Divisional \\
+\end{tabularx}
+
+% ── Projects ─────────────────────────────────────────────────
+\section{Projects}
+
+\projectentry
+  {https://qknot.github.io/University-Formal-Application-Generator/}
+  {Application Generator}
+  {A web-based formal university application generator for automating structured academic requests.}
+
+\projectentry
+  {https://qknot.github.io/NUBTK-Cover-Page-Generator/}
+  {Cover Page Generator}
+  {An automated NUBTK assignment cover page generator with customizable fields and PDF export.}
+
+\projectentry
+  {https://github.com/QKnot/10000-hour.git}
+  {10000 Hour}
+  {A deliberate practice tracker designed to help users master any skill through structured 10,000-hour milestones.}
+
+\projectentry
+  {https://qknot.github.io/word-chain/}
+  {Word Chain}
+  {An interactive word chain game built with vanilla JavaScript.}
+
+\projectentry
+  {https://qknot.github.io/play-list/}
+  {Playlist}
+  {A personal music playlist collection and player web application.}
+
+% ── Technical Skills ─────────────────────────────────────────
+\section{Technical Skills}
+
+\begin{tabularx}{\textwidth}{@{} l X @{}}
+  \textbf{Languages}    & C, C++, Python, Java, Rust, Assembly(x86, ARM) JavaScript, HTML/CSS, \LaTeX \\[3pt]
+  \textbf{AI/ML}        & PyTorch, TensorFlow, Scikit-learn, Hugging Face Transformers \\[3pt]
+  \textbf{Tools}        & Git, GitHub, Linux (Arch, Mint), VS Code, Jupyter \\[3pt]
+  \textbf{Domains}      & Data Structures \& Algorithms, Machine Learning, Deep Learning, \\
+                        & Computer Vision, Natural Language Processing, Explainable AI \\
+\end{tabularx}
+
+% ── Interests ────────────────────────────────────────────────
+\section{Interests}
+
+\begin{multicols}{2}
+\begin{itemize}[nosep, leftmargin=1.2em]
+  \item Mathematics (Number Theory, Linear Algebra, Calculus)
+  \item Physics (Quantum Mechanics, Electromagnetism)
+  \item Quantum Computing
+  \item Linux (Arch Linux, Linux Mint)
+  \item Competitive Programming
+  \item Combat Sports (MMA, Brazilian Jiu-Jitsu)
+\end{itemize}
+\end{multicols}
+
+% ── Online Profiles ──────────────────────────────────────────
+\section{Online Profiles}
+
+\begin{tabularx}{\textwidth}{@{} l X @{}}
+  \textbf{GitHub}       & \href{https://github.com/QKnot}{github.com/QKnot} \\[2pt]
+  \textbf{LinkedIn}     & \href{https://www.linkedin.com/in/qknot}{linkedin.com/in/qknot} \\[2pt]
+  \textbf{Codeforces}   & \href{https://codeforces.com/profile/qknot}{codeforces.com/profile/qknot} \\[2pt]
+  \textbf{LeetCode}     & \href{https://leetcode.com/QKnot}{leetcode.com/QKnot} \\[2pt]
+  \textbf{Portfolio}    & \href{https://qknot.github.io/Portfolio/}{qknot.github.io/Portfolio} \\
+\end{tabularx}
+
+\end{document}
