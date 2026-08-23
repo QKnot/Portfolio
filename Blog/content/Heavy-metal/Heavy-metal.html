@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Heavy Metal Was Born?</title>
+    <link rel="stylesheet" href="Heavy-metal.css">
+</head>
+
+<body>
+    <h1>How Heavy Metal Was Born?</h1>
+    <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+        <button onclick="toggleAudio(this, 'audio-lz')"
+            style="cursor: pointer; padding: 5px 15px; border-radius: 20px; border: 1px solid #ccc; background: #fff; font-size: 0.9rem;">▶
+            Play</button>
+        <span style="font-size: 0.9em; font-style: italic; color: #555;">Led Zeppelin Solo</span>
+        <audio id="audio-lz" src="./Music/led-zepline-solo.mp3"></audio>
+    </div>
+    <p class="date">August 23, 2026</p>
+    <div class="blog-content">
+        <p>
+            Heavy metal is a genre of rock music that developed in the late 1960s and early 1970s. It is characterized
+            by heavily distorted guitars, powerful drumming, and dark or fantastical themes. The genre grew out of
+            blues rock and psychedelic rock, with bands such as Black Sabbath, Deep Purple, and Led Zeppelin playing
+            important roles in its development.
+        </p>
+        <p>
+            Heavy metal took shape in Birmingham, England, when Black Sabbath moved from blues rock toward a darker,
+            heavier sound influenced by horror films. The band, originally called Earth, noticed crowds gathering at a
+            cinema across from their rehearsal space to watch scary movies. They decided to create music that evoked
+            the same sense of fear.
+        </p>
+        <p>
+            The band's name and signature song were inspired by the 1963 Italian horror film <a
+                href="https://youtu.be/FPDFII0DMwA" target="_blank"><em>Black Sabbath</em></a>,
+            directed by Mario Bava and starring Boris Karloff. Bassist Geezer Butler was also inspired to write the
+            song after having a nightmare about a black figure standing at the foot of his bed. Vocalist Ozzy Osbourne
+            then imagined the figure as a demon.
+        </p>
+        <div style="text-align: center; margin: 30px 0;">
+            <img src="./image/black-sabbath.png" alt="Black Sabbath" style="max-width: 100%; border-radius: 8px;">
+            <p style="font-size: 0.9rem; color: #666; font-style: italic; margin-top: 10px; text-align: center;">Black
+                Sabbath</p>
+        </div>
+        <p>
+            Released in 1970, the resulting track featured guitarist Tony Iommi's down-tuned, dissonant riff, which
+            uses the interval known as the <em>diabolus in musica</em>, or "the Devil's interval." The combination of
+            occult imagery, slow tempos, and crushing instrumentation helped establish the template for heavy metal.
+        </p>
+        <p>
+            The most iconic heavy metal bands include Led Zeppelin, Black Sabbath, Iron Maiden, Judas Priest, Metallica,
+            Megadeth, Slayer, Pantera, Motörhead, Dio, Slipknot, and Avenged Sevenfold.
+        </p>
+        <p style="line-height: 2.2;">
+            The most iconic heavy metal songs include
+            <span style="color: #0099cc; text-decoration: underline;">Stairway to Heaven</span>
+            <button onclick="toggleAudio(this, 'audio-stairway')"
+                style="cursor: pointer; padding: 2px 8px; border-radius: 12px; border: 1px solid #ccc; background: #fff; font-size: 0.8rem; margin: 0 5px; vertical-align: middle;">▶
+                Play</button>
+            <audio id="audio-stairway" src="./Music/Stairway-To-Heaven- Led-Zeppelin.mp3"></audio>,
+
+            <span style="color: #0099cc; text-decoration: underline;">War Pigs</span>
+            <button onclick="toggleAudio(this, 'audio-list-warpig')"
+                style="cursor: pointer; padding: 2px 8px; border-radius: 12px; border: 1px solid #ccc; background: #fff; font-size: 0.8rem; margin: 0 5px; vertical-align: middle;">▶
+                Play</button>
+            <audio id="audio-list-warpig" src="./Music/War-pig-Black-sabbath.mp3"></audio>,
+
+            <span style="color: #0099cc; text-decoration: underline;">Paranoid</span>
+            <button onclick="toggleAudio(this, 'audio-list-paranoid')"
+                style="cursor: pointer; padding: 2px 8px; border-radius: 12px; border: 1px solid #ccc; background: #fff; font-size: 0.8rem; margin: 0 5px; vertical-align: middle;">▶
+                Play</button>
+            <audio id="audio-list-paranoid" src="./Music/Paranoid-Black-abbath.mp3"></audio>,
+
+            <span style="color: #0099cc; text-decoration: underline;">Iron Man</span>
+            <button onclick="toggleAudio(this, 'audio-list-ironman')"
+                style="cursor: pointer; padding: 2px 8px; border-radius: 12px; border: 1px solid #ccc; background: #fff; font-size: 0.8rem; margin: 0 5px; vertical-align: middle;">▶
+                Play</button>
+            <audio id="audio-list-ironman" src="./Music/Iron-Man-Black-Sabbath.mp3"></audio>,
+
+            <span style="color: #0099cc; text-decoration: underline;">Enter Sandman</span>,
+            <span style="color: #0099cc; text-decoration: underline;">Master of Puppets</span>,
+            <span style="color: #0099cc; text-decoration: underline;">Symphony of Destruction</span>,
+            <span style="color: #0099cc; text-decoration: underline;">Walk</span>,
+            <span style="color: #0099cc; text-decoration: underline;">Ace of Spades</span>,
+            <span style="color: #0099cc; text-decoration: underline;">Holy Diver</span>,
+            <span style="color: #0099cc; text-decoration: underline;">Duality</span>, and
+            <span style="color: #0099cc; text-decoration: underline;">Bat Country</span>.
+        </p>
+        <script>
+            function toggleAudio(btn, audioId) {
+                // Pause all other audio elements and reset their buttons
+                var allAudios = document.querySelectorAll('audio');
+                var allButtons = document.querySelectorAll('button[onclick^="toggleAudio"]');
+
+                allAudios.forEach(function (a) {
+                    if (a.id !== audioId && !a.paused) {
+                        a.pause();
+                    }
+                });
+
+                allButtons.forEach(function (b) {
+                    if (b !== btn) {
+                        b.innerHTML = '▶ Play';
+                    }
+                });
+
+                var audio = document.getElementById(audioId);
+                if (audio.paused) {
+                    audio.play();
+                    btn.innerHTML = '⏸ Pause';
+                } else {
+                    audio.pause();
+                    btn.innerHTML = '▶ Play';
+                }
+
+                audio.onended = function () {
+                    btn.innerHTML = '▶ Play';
+                };
+            }
+        </script>
+    </div>
+</body>
+
+</html>
